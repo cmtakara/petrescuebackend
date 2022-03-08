@@ -99,12 +99,31 @@ public class PersonController {
 		if ((newPersonInfo.getAddress() != null) && !(newPersonInfo.getAddress().isEmpty())) {
 			foundPerson.setAddress(newPersonInfo.getAddress());
 		}
+				
+		//		private String bestcontact;
+		if ((newPersonInfo.getBestcontact() != null) && !(newPersonInfo.getBestcontact().isEmpty())) {
+			foundPerson.setBestcontact(newPersonInfo.getBestcontact());
+		}
+		
+		//		private String notes;
+		if ((newPersonInfo.getNotes() != null) && !(newPersonInfo.getNotes().isEmpty())) {
+			foundPerson.setNotes(newPersonInfo.getNotes());
+		}
+		
+		//		private char admin;
+		// Y or N
+		if ((newPersonInfo.getAdmin() != '\0') && !(newPersonInfo.getAdmin() == ' ')) {
+			foundPerson.setAdmin(newPersonInfo.getAdmin());
+		}
+		
+		//		private char updaterights;
+		// Y or N
+		if ((newPersonInfo.getUpdaterights() != '\0') && !(newPersonInfo.getUpdaterights() == ' ')) {
+			foundPerson.setUpdaterights(newPersonInfo.getUpdaterights());
+		}
 		
 		
-//		private String bestcontact;
-//		private String notes;
-//		private char admin;
-//		private char updaterights;
+		
 //		private String fosterstatus;
 //		private String fosteravailability;
 //		private String fostercurrentanimal;
