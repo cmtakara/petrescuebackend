@@ -79,11 +79,12 @@ public class PersonController {
 		Person foundPerson = personRepo.findById(id)
 				.orElseThrow(() -> new ResourceNotFoundException("person not found"));
 		
-//		//checking for null or empty string passed in
-//		//		private String name;
-//		if ((newDogInfo.getName() != null) && !(newDogInfo.getName().isEmpty())) {
-//			foundDog.setName(newDogInfo.getName());
-//		}
+		//checking for null or empty string passed in
+		//		private String name;
+		if ((newPersonInfo.getName() != null) && !(newPersonInfo.getName().isEmpty())) {
+			foundPerson.setName(newPersonInfo.getName());
+		}
+		
 //		private String name;
 //		private String email;
 //		private String phone;
