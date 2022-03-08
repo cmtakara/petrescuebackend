@@ -84,11 +84,23 @@ public class PersonController {
 		if ((newPersonInfo.getName() != null) && !(newPersonInfo.getName().isEmpty())) {
 			foundPerson.setName(newPersonInfo.getName());
 		}
+
+		//		private String email;
+		if ((newPersonInfo.getEmail() != null) && !(newPersonInfo.getEmail().isEmpty())) {
+			foundPerson.setEmail(newPersonInfo.getEmail());
+		}
+
+		//		private String phone;
+		if ((newPersonInfo.getPhone() != null) && !(newPersonInfo.getPhone().isEmpty())) {
+			foundPerson.setPhone(newPersonInfo.getPhone());
+		}
 		
-//		private String name;
-//		private String email;
-//		private String phone;
-//		private String address;
+		//		private String address;
+		if ((newPersonInfo.getAddress() != null) && !(newPersonInfo.getAddress().isEmpty())) {
+			foundPerson.setAddress(newPersonInfo.getAddress());
+		}
+		
+		
 //		private String bestcontact;
 //		private String notes;
 //		private char admin;
