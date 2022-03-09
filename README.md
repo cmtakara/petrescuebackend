@@ -16,7 +16,8 @@ so that small groups can easily create a website that fits their needs.  There a
 
 ## Endpoints
 http://localhost:8080
-CATS table in database
+
+### CATS table in database
 @RequestMapping("http://localhost:8080/api/v1/cats/")
 // all @GetMapping for cats: allcats, byid, byvetting, (*)byage, byadoptionstatus, (*)needsfoster
 // (*)(*)(*)need to add time in THEN bytime 
@@ -38,7 +39,7 @@ update a cat: http://localhost:8080/api/v1/cats/cat/{id}			[] {needs to be in th
 remove a cat: ("/api/v1/cats/removecat/{id}")
 
 
-DOGS table in database
+### DOGS table in database
 @RequestMapping("http://localhost:8080/api/v1/dogs/")
 // all @GetMapping for dogs: alldogs, byid, byvetting, (*)byage, byadoptionstatus, (*)needsfoster
 // (*)(*)(*)need to add time in THEN bytime 
@@ -61,12 +62,8 @@ remove a dog: ("/api/v1/dogs/removedog/{id}")
 
 
 
+### PEOPLE table in database
 
-@RequestMapping("api/v1/people/")
-	@GetMapping("/allpeople")
-	@GetMapping("/individualperson/{id}")
-	@GetMapping("/allvolunteers")
-	@GetMapping("/allfosters")
 	@GetMapping("/adoptersbystatus/{adopterstatus}")
 	@PostMapping("addperson")
 	@PutMapping("person/{id}")
@@ -75,24 +72,20 @@ remove a dog: ("/api/v1/dogs/removedog/{id}")
 PEOPLE table in database
 @RequestMapping("http://localhost:8080/api/v1/people/")
 	GET:
-ALL PEOPLE: http://localhost:8080/api/v1/dogs/api/v1/people/allpeople
+ALL PEOPLE: http://localhost:8080/api/v1/people/api/v1/people/allpeople
 PEOPLE with an id: http://localhost:8080/api/v1/people/individualperson/{id}     {id} is the integer id for the person
 PEOPLE who are active volunteers: http://localhost:8080/api/v1/people/allvolunteers
 PEOPLE who are active fosters: http://localhost:8080/api/v1/people/allfosters
-
-
-DENIED/COMPLETED
-//needs foster if foster is NONE
-//by age - adult or puppy YEARS or !YEARS
+adopter by status: http://localhost:8080/api/v1/people/allfosters/adoptersbystatus/{adopterstatus}  {adopterstatus}
 
     POST:
-create a new dog: http://localhost:8080/api/v1/dogs/adddog			[] {needs a dog object}
+create a new person: http://localhost:8080/api/v1/people/addperson			[] {needs a person object}
 
     PUT:
-update a dog: http://localhost:8080/api/v1/dogs/dog/{id}			[] {needs to be in the format of a dog object}, can add only updates
+update a person: http://localhost:8080/api/v1/people/person/{id}			[] {needs to be in the format of a person object}, can add only updates
 
     DELETE:
-remove a dog: ("/api/v1/dogs/removedog/{id}")
+remove a person: ("/api/v1/people/removeperson/{id}")
 
 ## Future updates
 Display unique list of cats
