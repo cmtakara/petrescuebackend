@@ -122,8 +122,7 @@ public class PersonController {
 			foundPerson.setUpdaterights(newPersonInfo.getUpdaterights());
 		}
 		
-		
-		
+	
 //		private String fosterstatus;
 //		private String fosteravailability;
 //		private String fostercurrentanimal;
@@ -136,79 +135,7 @@ public class PersonController {
 //		private String adopteranimaltype;
 //		private String adopteranimalname;
 //
-//		//		private String age;
-//		if ((newDogInfo.getAge() != null) && !(newDogInfo.getAge().isEmpty())) {
-//			foundDog.setAge(newDogInfo.getAge());
-//		}
-//		
-//		//		private char vetting;
-//		// Y or N
-//		if ((newDogInfo.getVetting() != '\0') && !(newDogInfo.getVetting() == ' ')) {
-//			foundDog.setVetting(newDogInfo.getVetting());
-//		}
-//
-//		//		private String imagename;
-//		if ((newDogInfo.getImagename() != null) && !(newDogInfo.getImagename().isEmpty())) {
-//			foundDog.setImagename(newDogInfo.getImagename());
-//		}
-//		
-////		//  IMAGE
-//		
-//		//		private String imageurl;
-//		if ((newDogInfo.getImageurl() != null) && !(newDogInfo.getImageurl().isEmpty())) {
-//			foundDog.setImageurl(newDogInfo.getImageurl());
-//		}
-//		
-//		//		private char bonded;
-//		// Y or N
-//		if ((newDogInfo.getBonded() != '\0') && !(newDogInfo.getBonded() == ' ')) {
-//			foundDog.setBonded(newDogInfo.getBonded());
-//		}
-//		
-//		//		private String foster;
-//		if ((newDogInfo.getFoster() != null) && !(newDogInfo.getFoster().isEmpty())) {
-//			foundDog.setFoster(newDogInfo.getFoster());
-//		}
-//		
-//		//		private String location;
-//		if ((newDogInfo.getLocation() != null) && !(newDogInfo.getLocation().isEmpty())) {
-//			foundDog.setLocation(newDogInfo.getLocation());
-//		}
-//		
-//		//		private char chip;
-//		// Y or N
-//		if ((newDogInfo.getChip() != '\0') && !(newDogInfo.getChip() == ' ')) {
-//			foundDog.setChip(newDogInfo.getChip());
-//		}
-//
-//		//		private String spayneuter;
-//		// YES, NO, TOO YOUNG, UNKNOWN
-//		if ((newDogInfo.getSpayneuter() != null) && !(newDogInfo.getSpayneuter().isEmpty())) {
-//			foundDog.setSpayneuter(newDogInfo.getSpayneuter());
-//		}
-//		
-//		//		private String issues;
-//		if ((newDogInfo.getIssues() != null) && !(newDogInfo.getIssues().isEmpty())) {
-//			foundDog.setIssues(newDogInfo.getIssues());
-//		}
-//		
-//		//		private String other;
-//		// cats, dogs, children
-//		if ((newDogInfo.getOther() != null) && !(newDogInfo.getOther().isEmpty())) {
-//			foundDog.setOther(newDogInfo.getOther());
-//		}
-//		
-////		private String adoptionstatus;
-//		// none, applied, approved, completed
-//		if ((newDogInfo.getAdoptionstatus() != null) && !(newDogInfo.getAdoptionstatus().isEmpty())) {
-//			foundDog.setAdoptionstatus(newDogInfo.getAdoptionstatus());
-//		}
-//		
-////		private String adopter;
-//		if ((newDogInfo.getAdopter() != null) && !(newDogInfo.getAdopter().isEmpty())) {
-//			foundDog.setAdopter(newDogInfo.getAdopter());
-//		}
-		
+/
 		Person updatedPerson = personRepo.save(foundPerson);
 		
 		return ResponseEntity.ok(updatedPerson);
