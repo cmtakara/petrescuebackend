@@ -2,17 +2,20 @@
 
 # Pet Rescue Template
 
-This is a website created using React.  It is deployed using Heroku and can be found at [Generic Pet rescue](https://pet-rescue-app.herokuapp.com/)
+This is a website created using React.  It is deployed using Heroku and can be found at [Generic Pet rescue](https://pet-rescue-app.herokuapp.com/) This is the backend, so the part that handles the database and models for the animals and people related to the backend.
 
 ## Installation
 
-This is a web application, so there is no installation process.  You simply need to use the url provided to enter the site.
+This is a web application, so there is no installation process.  You simply need to use the url provided to enter the site.  This site currently works with the deployed backend.  The backend is the part that handles the database interactions, via the API.
 
 ## Usage
 
+The intended user for this is rescue organizations.  While there are a large amount of website templates available, they don't necessarily meet the needs of the rescue where you want to show the public all of the available animals and gain their interest, but also want to keep all of the information regarding the animals and the people involved in the organization.
+
 This current version is extremely generic, as the purpose is to be flexible so that small rescue organizations can easily modify it to their own needs.
-There is a login page so that only authorized users (owner, volunteer) can access certain aspects.  The goal of the page is to be flexible and easily modified 
-so that small groups can easily create a website that fits their needs.  There are some unique needs that rescues have that aren't met with generic websites.
+
+On the associated frontend, there is a login page so that only authorized users (owner, volunteer) can access certain aspects.  The goal of the page is to be flexible and easily modified 
+so that small groups can easily create a website that fits their needs.  There are some unique needs that rescues have that aren't met with generic websites.  
 
 ## Endpoints
 http://localhost:8080
@@ -88,9 +91,7 @@ update a person: http://localhost:8080/api/v1/people/person/{id}			[] {needs to 
 remove a person: ("/api/v1/people/removeperson/{id}")
 
 ## Future updates
-Display unique list of cats
-Have a generic dogs display
-Display unique list of dogs
+More filtering of animals and people
 Have volunteer inputs
 
-### dependencies
+
