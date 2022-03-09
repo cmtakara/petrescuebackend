@@ -2,11 +2,13 @@
 
 # Pet Rescue Template
 
-This is a website created using React.  It is deployed using Heroku and can be found at [Generic Pet rescue](https://pet-rescue-app.herokuapp.com/) This is the backend, so the part that handles the database and models for the animals and people related to the backend.
+This is a the backend that works with the frontend website created using React.  It is deployed using Heroku and can be found at [Generic Pet rescue](https://pet-rescue-app.herokuapp.com/) 
+This is the backend, so the part that handles the database and models for the animals and people related to the backend.  It was developed in Java using PostgreSql.
 
 ## Installation
 
-This is a web application, so there is no installation process.  You simply need to use the url provided to enter the site.  This site currently works with the deployed backend.  The backend is the part that handles the database interactions, via the API.
+This is a web application, so there is no installation process.  You simply need to use the urls provided to access the specified endpoints.
+to enter the site.  This site currently works with the deployed frontend.  The backend is the part that handles the database interactions, via the API.
 
 ## Usage
 
