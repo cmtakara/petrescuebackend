@@ -135,7 +135,7 @@ public class PersonController {
 //		private String adopteranimaltype;
 //		private String adopteranimalname;
 //
-/
+
 		Person updatedPerson = personRepo.save(foundPerson);
 		
 		return ResponseEntity.ok(updatedPerson);
